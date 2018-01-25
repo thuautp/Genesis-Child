@@ -1,0 +1,6 @@
+// Changing the Credits
+function iowa_footer_creds_text () {
+ $copyright = '<div class="creds"><p>Copyright &copy; ' . date('Y') . ' &middot; <a href="https://wpbeaches.com/">Neil Gee</a> - All Rights Are Reserved &middot; Designed by<a href="https://thuphan.design"> thuphan.design</a></p></div>';
+return $copyright
+ }
+add_filter( 'genesis_footer_creds_text', 'iowa_footer_creds_text' );
