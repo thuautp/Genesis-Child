@@ -1,3 +1,13 @@
+//Register in new Widget areas
+function genesischild_extra_widgets() {	
+	genesis_register_sidebar( array(
+	'id'            => 'header-middle',
+	'name'          => __( 'Header Middle', 'genesischild' ),
+	'description'   => __( 'This is the Header Middle area', 'genesischild' ),
+	) );
+}
+
+add_action( 'widgets_init', 'genesischild_extra_widgets' );
 //Add in the new header with the middle widget header
 function themeprefix_genesis_do_header() {
 
